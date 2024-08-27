@@ -1,0 +1,6 @@
+ I will the Soanr dataset , it involve 60 real-valued inputs and two-class target variable at first we load and then we evaluate with knn and get accuracy in the next step we use Normal Quantile Transform
+ it is often desirable to ttransform an input variable to have  a normal probability distribution to improve the modeling perormnace, class and set the output_distribution argument to noemal , we must also set the
+ the n_quantile argument to a value less thanthe number of observation in the training dataset, in this case 100, we can call fit_transform() function and pass it to our dataset to create a quantile transformed
+ and then evaluate with knn and get accuracy.in the next step we use Uniform Quantile Transform, sometimes it can be beneficial to transform a highly exponantial or multi-model distribution to have a uniform 
+ distribution and then evaluate with knn and get accuracy , we see accuracy in the 3 step is bets and highest abd has a good accuracy performance and in the final step we choose the number of quantile as an arbitrary
+ number in this case ,100, this hyperparameter can be tunned to explore the effect of the resolution of the transform on the resulting skill of the model
